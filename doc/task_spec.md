@@ -14,7 +14,7 @@ inline.
 Here is a sample task representation:
 
 ```markdown
-- [ ] (state: todo, priority: \*\*\*) #1 Implement login functionality @john (Due: 31-12-2023) #backend #authentication
+- [ ] (state: todo) (priority: high) #1 Implement login functionality @john (Due: 31-12-2023) #backend #authentication
 ```
 
 ### Task States
@@ -34,9 +34,9 @@ The state must be one of the following:
 Each task has a priority which is represented in brackets `(priority:
 priority_level)`. The priority level must be one of the following:
 
-- `High`: High priority.
-- `Med`: Medium priority.
-- `Low`: Low priority.
+- `high`: High priority.
+- `med`: Medium priority.
+- `low`: Low priority.
 
 ### Task Number
 
@@ -58,8 +58,8 @@ Tags can be added to the task using hashtags. For example, `#backend
 Notes can be added below the task in a paragraph.
 
 ```markdown
-- [ ] (state: todo, priority: \*\*\*) #1 Implement login functionality @john (Due: 31-12-2023) #backend #authentication
-  - Note: Remember to add validation for inputs.
+- [ ] (state: todo) (priority: high) #1 Implement login functionality @john (Due: 31-12-2023) #backend #authentication
+  Remember to add validation for inputs!
 ```
 
 ## Task Dependencies
@@ -80,16 +80,16 @@ Here's an example:
 ```markdown
 # Todo
 
-- [ ] (state: todo, priority: \*\*\*) #1 Implement login functionality @john (Due: 31-12-2023) #backend #authentication
-- [ ] (state: next, priority: \*\*) #2 Write unit tests for login functionality @mary (Depends on #1) #testing
+- [ ] (state: todo) (priority: high) #1 Implement login functionality @john (Due: 31-12-2023) #backend #authentication
+- [ ] (state: next) (priority: med) #2 Write unit tests for login functionality @mary (Depends on #1) #testing
 
 # On Hold
 
-- [ ] (state: in-progress, priority: \*) #3 Set up database @alex #database
-- [ ] (state: hold, priority: \*) #6 Research new technologies @john
+- [ ] (state: in-progress) (priority: low) #3 Set up database @alex #database
+- [ ] (state: hold) (priority: low) #6 Research new technologies @john
 
 # Completed
 
-- [x] (state: cancelled, priority: \*\*\*) #5 Implement sign up functionality @mary
-- [x] (state: done, priority: \*) #4 Set up project repository @john
+- [x] (state: cancelled) (priority: high) #5 Implement sign up functionality @mary
+- [x] (state: done) (priority: low) #4 Set up project repository @john
 ```

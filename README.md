@@ -1,6 +1,6 @@
 # Kon
 
-![Kon logo](images/kon_logo.png)
+![Kon logo](images/kon_logo.png | width=100)
 
 ## About
 
@@ -42,7 +42,7 @@ Here's an example of how tasks are represented in Kon:
 # Todo
 
 - [ ] (state: todo) (priority: high) #1 Implement login functionality @john #backend #authentication
-  - Note: Remember to add validation for inputs.
+  Remember to add validation for inputs!
 - [ ] (state: next) (priority: med) #2 Write unit tests for login functionality @mary (Depends on #1) #testing
 - [ ] (state: in-progress) (priority: low) #3 Set up database @alex #database
 
