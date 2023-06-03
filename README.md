@@ -1,6 +1,8 @@
 # Kon
 
-![Kon logo](images/kon_logo.png | width=100)
+<p align="center">
+  <img src="images/kon_logo.png" width="100" alt="Kon Logo" />
+</p>
 
 ## About
 
@@ -56,9 +58,8 @@ Here's an example of how tasks are represented in Kon:
 - [x] (state: done) (priority: low) #4 Set up project repository @john
 ```
 
-For more details, please refer to the [Kon Markdown
-Specification](doc/task_spec.md). You can also read Kon's own Kon Todos at
-[todo.md](todo.md)
+For more details, you can read the [Kon Markdown Specification](doc/task_spec.md). 
+You can also read Kon's own Kon Todos at [todo.md](todo.md)
 
 ## Getting Started
 
