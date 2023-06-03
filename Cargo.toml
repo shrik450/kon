@@ -5,4 +5,12 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+name = "konlib"
+path = "src/lib/lib.rs"
+
 [dependencies]
+clap = { version = "4.3.1", features = ["derive"] }
+env_logger = "0.10.0"
+log = "0.4.18"
+pulldown-cmark = { version = "0.9.3", default-features = false }
