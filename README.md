@@ -18,21 +18,28 @@ that's usually enough.
 I love emacs, and org-mode. I really do. But I don't use emacs as a code editor,
 and keeping it open for just org more doesn't work for me. Apart from that, if I
 want to check in the todos for a project, org-mode isn't a format I can expect
-other people to be able to interact with. Kon uses markdown, which most people
-are familiar with, and its extensions to markdown's task scheme degrade
-gracefully even if you're editing it by hand.
+other people to be able to interact with.
+
+In contrast, kon uses markdown, which most people are familiar with. Its
+extensions to GFM tasks help you squeeze a little extra juice from text-based
+tasks. Kon is gracious and will accept - even fix! - files that don't strictly
+follow its spec, and its tasks degrade gracefully even if you're editing it by
+hand without kon around.
 
 ## Key Features
 
-- **Command-Line Interface:** Kon lives in your terminal, allowing you to manage tasks quickly and efficiently without context switching.
-- **Markdown Format:** Tasks are stored in a simple markdown format that is easy to read and edit manually.
-- **Task States:** Easily mark tasks as `todo`, `next`, `in-progress`, `on hold`, `cancelled`, or `done`.
+- **Command-Line Interface:** Kon lives in your terminal, allowing you to manage
+  tasks quickly and efficiently without context switching.
+- **Markdown Format:** Tasks are stored in a simple markdown format that is easy
+  to read and edit manually.
+- **Task States:** Easily mark tasks as `todo`, `next`, `in-progress`, `on
+hold`, `cancelled`, or `done`.
 - **Task Priorities:** Assign priorities to tasks as `high`, `med`, or `low`.
 - **Assignees:** Assign tasks to team members directly in the markdown file.
 - **Tags:** Organize your tasks with custom tags.
 - **Task Dependencies:** Define and track task dependencies.
 - **Task Notes:** Add detailed notes and descriptions to your tasks.
-- **Dashboard:** Like org agenda. It shows you what you're working on so you can
+- **Dashboard:** Like org agenda, shows you what you're working on so you can
   tuck it away in some corner of your screen, and pick up where you left off the
   next time you come back to your weekend project.
 
@@ -43,19 +50,19 @@ Here's an example of how tasks are represented in Kon:
 ```markdown
 # Todo
 
-- [ ] (state: todo) (priority: high) #1 Implement login functionality @john #backend #authentication
-  Remember to add validation for inputs!
-- [ ] (state: next) (priority: med) #2 Write unit tests for login functionality @mary (Depends on #1) #testing
-- [ ] (state: in-progress) (priority: low) #3 Set up database @alex #database
+- [ ] NEXT #5 Implement login functionality {high} @john #backend #authentication
+- [ ] TODO #6 Write unit tests for login functionality {low} (Depends on #1) #testing
+- [ ] #? Send confirmation e-mail #authentication {med}
 
-# On Hold
+# In Progress
 
-- [ ] (state: hold) (priority: low) #6 Research new technologies @john
+- [ ] DOING #4 Set up database {high}
 
 # Completed
 
-- [x] (state: cancelled) (priority: high) #5 Implement sign up functionality @mary
-- [x] (state: done) (priority: low) #4 Set up project repository @john
+- [x] DONE #3 Implement sign up functionality {high}
+- [x] DONE #1 Set up project repository @john
+- [x] CANCELLED #2 Research new technologies @john {low}
 ```
 
 For more details, you can read the [Kon Markdown Specification](doc/task_spec.md). 

@@ -20,6 +20,7 @@ directory of your project.
 - `dashboard` (aliased to `db`): Shows a list of tasks assigned to you.
 - `find <query>` (aliased to `fd`): Search through tasks by text.
 - `filter` (aliased to `f`): Filter tasks.
+- `fix`: Fix changes made by hand to the task list.
 - `help`: Displays help information about kon.
 
 ## OPTIONS
