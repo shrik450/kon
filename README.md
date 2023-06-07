@@ -1,5 +1,8 @@
 # Kon
 
+_Note: Kon is a work in progress, and this README reflects a vision for it in a
+README-driven development model._
+
 <p align="center">
   <img src="images/kon_logo.png" width="100" alt="Kon Logo" />
 </p>
@@ -65,7 +68,7 @@ Here's an example of how tasks are represented in Kon:
 - [x] CANCELLED #2 Research new technologies @john {low}
 ```
 
-For more details, you can read the [Kon Markdown Specification](doc/task_spec.md). 
+For more details, you can read the [Kon Markdown Specification](doc/task_spec.md).
 You can also read Kon's own Kon Todos at [todo.md](todo.md)
 
 ## Getting Started
